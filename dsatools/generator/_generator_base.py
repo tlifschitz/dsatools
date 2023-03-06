@@ -286,7 +286,7 @@ class generator_base(ABC):
         * signal:1d naarray,
             simulated signal.
         '''
-        sig = np.zeros([],dtype = np.complex)
+        sig = np.zeros([],dtype = complex)
         
         if (callback in  ['None', None]):
               return sig

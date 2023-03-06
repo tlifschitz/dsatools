@@ -43,7 +43,7 @@ def hht(components):
     
     hilbert_flag = False
     if components.dtype not in \
-        [complex,np.complex,np.complex64,
+        [complex,complex,np.complex64,
 		np.complex128,np.complex_]:
          hilbert_flag = True
     

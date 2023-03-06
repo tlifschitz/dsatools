@@ -60,12 +60,12 @@ def capone(x, order, mode = 'full',
     phi = np.zeros(n_psd)
         
     frange = np.arange(n_psd)    
-    pseudospetrum = np.zeros(n_psd, dtype=np.complex)
+    pseudospetrum = np.zeros(n_psd, dtype=complex)
     
     n = np.arange(order)
     for i in np.arange(n_psd):
         a = np.exp(- 2j*np.pi*i*n/n_psd) 
-        a = np.matrix(a,dtype=np.complex).T
+        a = np.matrix(a,dtype=complex).T
   
         pseudospetrum[i] =((order+1)/(a.H*IR*a))
         

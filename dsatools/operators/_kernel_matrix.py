@@ -151,7 +151,7 @@ def _kernel(a,b=None,ktype='rbf',kpar=1/2, take_mean = False):
     '''
     a,b = _check_dim(a,b)
 
-    k = np.zeros((a.shape[0],b.shape[0]), dtype = np.complex)
+    k = np.zeros((a.shape[0],b.shape[0]), dtype = complex)
     
     if ktype is 'linear':   
         k = _linear(a,b)

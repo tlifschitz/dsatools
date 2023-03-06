@@ -248,7 +248,7 @@ def __drop_imag__(z):
     return z
 
 def gamma(z):
-    z = np.complex(z)
+    z = complex(z)
     if np.real(z) < 0.5:
         y = np.pi / (np.sin(np.pi*z) * gamma(1-z))  # Reflection formula
     else:

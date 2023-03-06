@@ -53,7 +53,7 @@ def cdf_dist(x,y, p=1, smooth = 0, root = False):
 
     P = np.asarray(P, dtype=x.dtype)#+__EPSILON__
     Q = np.asarray(Q, dtype=y.dtype)#+__EPSILON__  
-    deltas = np.asarray(deltas, dtype=np.complex)
+    deltas = np.asarray(deltas, dtype=complex)
     
     out = np.sum(np.power(np.abs(P - Q),p)*deltas)
     
@@ -272,7 +272,7 @@ def cramer_vonmises(x,y, p=2, root = False):
 
     deltas = operators.diff(Q) 
 
-    deltas = np.asarray(deltas, dtype=np.complex)    
+    deltas = np.asarray(deltas, dtype=complex)    
     P = np.asarray(P, dtype=x.dtype)#+__EPSILON__
     Q = np.asarray(Q, dtype=y.dtype)#+__EPSILON__  
 
@@ -319,7 +319,7 @@ def anderson_darling(x,y, p=2, root = False):
     _, P, Q  = operators.ecdf(x,y)
 
     deltas = operators.diff(Q)/(Q*(1-Q)+_EPS_)
-    deltas = np.asarray(deltas, dtype=np.complex)    
+    deltas = np.asarray(deltas, dtype=complex)    
     P = np.asarray(P, dtype=x.dtype)#+__EPSILON__
     Q = np.asarray(Q, dtype=y.dtype)#+__EPSILON__  
 

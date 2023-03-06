@@ -40,7 +40,7 @@ def ecf(x,y=None,fs=1,take_mean = False):
     t = np.arange(x.shape[0])/fs
   
     out = [np.sum(np.exp(-1j*ti*np.abs(x-y))) for ti in t]
-    return  np.asarray(out,dtype = np.complex)
+    return  np.asarray(out,dtype = complex)
 
     
 

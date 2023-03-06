@@ -222,8 +222,8 @@ def maxcor_phase(s1,s2, normalize = False):
         out /= np.sqrt(np.abs(np.sum(np.square(s1))*np.sum(np.square(s2))))
     
     # if any iscomplex
-    if s1.dtype in [np.complex,complex,np.complex128,np.complex64] or \
-       s2.dtype in [np.complex,complex,np.complex128,np.complex64]:
+    if s1.dtype in [complex,complex,np.complex128,np.complex64] or \
+       s2.dtype in [complex,complex,np.complex128,np.complex64]:
         phi0 = np.angle(out)
     
     else:

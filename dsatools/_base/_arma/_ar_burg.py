@@ -57,11 +57,11 @@ def ar_burg(x, order):
     x = np.array(x)
     N = x.shape[0]
 
-    a  = np.zeros(order, dtype=np.complex)
-    k  = np.zeros(order, dtype=np.complex) #need only for variance
+    a  = np.zeros(order, dtype=complex)
+    k  = np.zeros(order, dtype=complex) #need only for variance
     
-    ef = x.astype(np.complex)
-    eb = x.astype(np.complex)
+    ef = x.astype(complex)
+    eb = x.astype(complex)
     
     for i in np.arange(order):
         

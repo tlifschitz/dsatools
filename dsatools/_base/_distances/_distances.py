@@ -216,8 +216,8 @@ def angle(x, y, normalize=False):
         out /= np.sqrt(np.abs(np.sum(np.square(x))*np.sum(np.square(y))))
 
     # if any iscomplex
-    if x.dtype in [np.complex, complex, np.complex128, np.complex64] or \
-            y.dtype in [np.complex, complex, np.complex128, np.complex64]:
+    if x.dtype in [complex, complex, np.complex128, np.complex64] or \
+            y.dtype in [complex, complex, np.complex128, np.complex64]:
         out = np.angle(out)
 
     else:
@@ -589,8 +589,8 @@ def ab_divergence(x, y, a=1, b=1):
 
 #     x,y = _check_xy(x,y)
 
-#     x = np.asarray(x,dtype = np.complex)
-#     y = np.asarray(y,dtype = np.complex)
+#     x = np.asarray(x,dtype = complex)
+#     y = np.asarray(y,dtype = complex)
 
 #     out = x*np.log(y)
 

@@ -493,7 +493,7 @@ class Beatsignal(generator_base):
         
         sig = A*np.exp(1j*(W*delay + W2* delta_delay+ phi0)) 
         
-        sig = np.asarray(sig,dtype= np.complex)
+        sig = np.asarray(sig,dtype= complex)
         
         if (callback in  ['None', None]):
               return sig

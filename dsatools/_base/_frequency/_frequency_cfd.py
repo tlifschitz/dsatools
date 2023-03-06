@@ -10,7 +10,7 @@ def _check_input(s,fs=None):
     N = s.shape[0]
     
     if s.dtype not in \
-        [complex,np.complex,np.complex64,
+        [complex,complex,np.complex64,
 		np.complex128,np.complex_]:
         s = scipy.signal.hilbert(s)
         

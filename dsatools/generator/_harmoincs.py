@@ -493,7 +493,7 @@ class Harmonics(generator_base):
 
         sig = A*np.exp(2j*np.pi*( f0*t + incF*np.square(t)/2/Tm )+ phi0*1j ) 
         
-        sig = np.asarray(sig,dtype= np.complex)
+        sig = np.asarray(sig,dtype= complex)
         
         if (callback in  ['None', None]):
               return sig

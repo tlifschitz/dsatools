@@ -110,11 +110,11 @@ def  vmd(x,
     sp_x[N_ext//2:] = 0
 
     # start with empty noise variance
-    err = np.zeros(N_ext, dtype = np.complex)
+    err = np.zeros(N_ext, dtype = complex)
     
     # matrix of itteration
-    imfs     = np.zeros((N_ext, order),dtype=np.complex)  
-    imfs_tmp = np.zeros((N_ext, order),dtype=np.complex)  
+    imfs     = np.zeros((N_ext, order),dtype=complex)  
+    imfs_tmp = np.zeros((N_ext, order),dtype=complex)  
 
     #initialization of weights 
     omega = (2/order)*np.arange(order) #insted of 0.5 #may be random
@@ -212,11 +212,11 @@ def  vmd(x,
 #     sp_x[N_ext//2:] = 0
 
 #     # start with empty noise variance
-#     err = np.zeros(N_ext, dtype = np.complex)
+#     err = np.zeros(N_ext, dtype = complex)
     
 #     # matrix of itteration
-#     imfs     = np.zeros((N_ext, order),dtype=np.complex)  
-#     imfs_tmp = np.zeros((N_ext, order),dtype=np.complex)  
+#     imfs     = np.zeros((N_ext, order),dtype=complex)  
+#     imfs_tmp = np.zeros((N_ext, order),dtype=complex)  
 
 #     #initialization of weights 
 #     omega = (2/order)*np.arange(order) #insted of 0.5 #may be random
